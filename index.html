@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-emarianap/css/framework.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="display-3 text-center">Lista de Tareas</div>
+            <div class="tasks border"> 
+                <div class="row">
+                    <input type="checkbox" name="all">
+                    <label  for="all">Ver todos</label>  
+                    <button class="btn btn-primary" style="margin-left: auto;" data-toggle="modal" data-target="#modal_test">Nueva</button> 
+                    </div>
+                    <br> 
+                    <div class="tasksList" id="taskList">
+                        <!-- <h5 class="">Comprar Árbol del navidad</h5>
+                        <p>Ir al super por un arbolito de navidad</p>
+                        <div class="row">
+                          <input type="checkbox" name="complete">
+                          <label for="complete">Completada</label>  
+                        </div> -->
+                        
+                    </div>
+                </div>
+        </div>
+        
+        <div id="modal_test" class="modal">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <h5>Agregar Tarea</h5>
+                    <button class="btn" data-dismiss="#modal_test">x</button>
+                </div>
+                <form class="modal-body" name="taskForm" id="formTask" iautocomplete="off">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="title"> Título </label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form" type="text" name="title" id="title" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <label for="description">Descripción</label>
+                        </div>
+                        <div class="col-md-9 ">
+                            <input class="form" type="text" name="description" id="description">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <label for="date">Fecha</label>
+                        </div>
+                        <div class="col-md-9 ">
+                            <input class="form" type="date" name="date" id="date">
+                        </div>
+                    </div>
+                
+                    <div class="modal-footer"> 
+                        <button  class="btn btn-succes" id="btnsave">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="ap.js"></script>
+</body>
+</html>
